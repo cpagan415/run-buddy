@@ -13,7 +13,7 @@
   /* apply styles to <header> */
   header {
     padding: 20px 35px;
-    background-color: #39a6b2;
+    background-color:none;
   }
   
   header h1 {
@@ -79,10 +79,30 @@
     position: relative;
   }
   /* Hero Style End */
+
+  .hero-des {
+    position: absolute;
+    left: 350px;
+    bottom: 250px;
+    text-align: right;
+    width:400px;
+    color: white;
+  }
+
+  .hero-des h2 {
+      color: #fce138;
+      font-style: italic;
+      font-size: 40px;
+      text-shadow: 2px 2px rgb(0,0,0, 0.4);
+
+  }
+
+
   
   .hero-form {
     border: 3px solid #024e76;
-    background-color: #fce138;
+    border-radius: 25px;
+    background-color:rgba(252, 225, 0.22, 0.6);
     padding: 20px;
     width: 500px;
     color: #024e76;
