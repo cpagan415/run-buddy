@@ -14,6 +14,14 @@
   header {
     padding: 20px 35px;
     background-color: #39a6b2;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
   }
   
   header h1 {
@@ -22,6 +30,7 @@
     color: #fce138;
     margin: 0;
     display: inline;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   header a {
     text-decoration: none;
@@ -41,6 +50,18 @@
     margin: 0 30px;
     font-weight: lighter;
     font-size: 22px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  header nav ul li a:hover {
+    background: #fce138;
+    color: #024e76;
+    border-radius: 15px;
+    text-shadow: none;
+  }
+
+  .hero-form button:hover {
+    color: #39a6b2;
   }
   
   footer {
@@ -77,18 +98,25 @@
     background-size: cover;
     background-position: center;
     position: relative;
+
+  }
+
+  .hero-cta h2 {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
   /* Hero Style End */
   
   .hero-form {
     border: 3px solid #024e76;
-    background-color: #fce138;
+    background-color: rgba(252, 225, 56, .80);
     padding: 20px;
     width: 500px;
     color: #024e76;
     position: absolute;
     bottom: 120px;
     right: 140px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
   }
   
   .hero-form h3 {
@@ -107,6 +135,7 @@
     color: #024e76;
     width: 100%;
     margin-bottom: 15px;
+    border-radius: 10px;
   }
   
   .hero-form label {
@@ -119,6 +148,16 @@
     border: none;
     padding: 10px 20px;
     font-size: 16px;
+    border-radius: 10px;
+  }
+
+  .form-input {
+    background-color: rgba(255,255,255, 0.75);
+  }
+
+  .form-input:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
   }
   
   .intro {
@@ -160,6 +199,10 @@
   
   .steps span {
     font-size: 38px;
+  }
+
+  .steps:last-child {
+    border-bottom: 1px solid #39a6b2;
   }
   
   .section-title {
@@ -267,4 +310,31 @@
     color: #fce138;
   }
 
+  .contact-form input, .contact-form textarea {
+    border-radius: 10px;
+  }
+
+  .contact-form button {
+    border-radius: 10px;
+  }
+
+  .contact-form button:hover {
+    color: #fce138;
+    background: #39a6b2;
+  }
+  .contact-form input, .contact-form textarea {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
+  }
   
+  
+  .contact-form input:focus, .contact-form textarea:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
+  }
+
+  @media screen and (max-width: 980px) {
+   header{
+    position: relative;
+   } 
+  }
